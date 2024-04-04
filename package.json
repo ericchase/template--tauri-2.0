@@ -1,0 +1,29 @@
+{
+  "name": "app-name",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tauri build --no-bundle",
+    "bundle": "tauri build",
+    "clean": "cd src-tauri && cargo clean",
+    "debug": "tauri build -d -v --no-bundle",
+    "dev": "tauri dev",
+    "format-debug": "prettier . --debug-check",
+    "format": "prettier . --write",
+    "tauri": "tauri",
+    "vite-build": "tsc && vite build",
+    "vite-dev": "vite",
+    "vite-preview": "vite preview"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.0.0-beta.7",
+    "@tauri-apps/plugin-shell": "2.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.0.0-beta.12",
+    "prettier": "3.2.5",
+    "typescript": "5.4.3",
+    "vite": "5.2.8"
+  }
+}
